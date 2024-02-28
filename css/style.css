@@ -1,0 +1,896 @@
+:root {
+    --black: #333333;
+    --grey01: #F8F9FA;
+    --grey02: #9D9D9D;
+    --grey03: #D9D9D9;
+    --grey04:#F0F0F0;
+    --orange: #F59401;
+    --white: #FFFFFF;
+    --bs-focus-ring-color: #f5930157;
+    --bs-body-bg: #F8F9FA;
+}
+body {
+    background-color: var(--grey01);
+    scroll-behavior: auto;
+    scroll-behavior: smooth;
+}
+body, p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    color: var(--black);
+}
+h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+span {
+    color: var(--white);
+}
+
+
+/* Seccion navbar */
+.bg-body-tertiary {
+    background-color: var(--white) !important;
+    box-shadow: 0px 4px 4px 0px rgba(217, 217, 217, 0.17);
+}
+.offcanvas {
+    --bs-offcanvas-width: 100vw !important;
+}
+.navbar-toggler {
+    border: 0;
+}
+.offcanvas.hiding, 
+.offcanvas.show, 
+.offcanvas.showing {
+    background-color: var(--grey01);
+}
+.offcanvas-body {
+    background-image: url(../img/background-menu.png);
+    background-size: auto;
+    background-position: right;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.offcanvas-body .navbar-nav p {
+    margin: 0;
+    color: var(--grey02);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.offcanvas-body .navbar-nav a {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 3rem;
+}
+.offcanvas-body .navbar-nav a:hover {
+    transition: 0.3s ease-in-out;
+    color: var(--orange);
+}
+
+
+button.btn-close{
+    --bs-btn-close-focus-shadow: 0 0 0 0.25rem #f5930157;
+}
+
+/*section header*/
+.header { 
+    height: 100vh;
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.header a.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1rem;
+    border-radius: 88px;
+    border: 1px solid var(--black);
+    background: var(--white);
+    width: 100%;
+    margin: 1%;
+    padding: 5% 5%;
+}
+.header a.btn:hover{
+    color: var(--white);
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    transition: 0.3s ease-in;
+    text-decoration: none;
+ }
+
+/*section descripcion*/
+.description {
+    background-color: var(--black);
+    padding: 10% 0;
+}
+.description p {
+    color: var(--grey02);
+    font-size: 1.375rem;
+    line-height: 1.75rem;
+    font-weight: 300;
+}
+p span {
+    color: var(--white);
+}
+.header .whatsapp {
+    position: fixed;
+    z-index: 3;
+    right: 5%;
+    bottom: 10%;
+}
+.header .circle {
+    background-color: var(--black);
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+}
+.header .whatsapp a {
+    text-decoration: none;
+}
+.header .whatsapp .circle:hover {
+    background-color: var(--orange);
+    transition: 300ms ease-in;
+}
+/*Procesos*/
+.procesos {
+    padding: 5% 0 0;
+    position: relative;
+    background-image: url(../img/background-procesos.png);
+    background-size: cover;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+.procesos h2 span {
+    color: var(--grey02);
+}
+
+.procesos .card {
+    border-radius: 20px;
+    border: 1px solid var(--grey-02, #9D9D9D);
+    background: var(--white);
+    height: 332px;
+    text-align: center;
+    width: auto; 
+    position: relative;
+    z-index: 2;
+}
+.procesos .card:hover {
+    border: 1px solid var(--orange);
+    transition: 300ms ease-in;
+}
+.procesos .card span {
+    color: var(--white);
+    font-size: 3rem;
+}
+.procesos .card span.circle {
+    background-color: var(--black);
+    width: 100px;
+    height: 100px;
+}
+.procesos .card span.circle:hover {
+    transition: 300ms ease-in;
+    background-color: var(--orange);
+}
+
+.blackground-procesos-black {
+    position: relative;
+    padding-bottom: 4%;
+}
+.blackground-procesos-black::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 68px 68px 0px 0px;
+    background: var(--black);
+    height: 50%;
+    z-index: 1;
+}
+/* Areas */
+.areas {
+    background: var(--black);
+    margin: 0;
+    padding: 0;
+}
+.areas hr {
+    width: 100%;
+    line-height: 1px;
+    border-bottom: 1px solid var(--grey02);
+    border-top: 0;
+    padding-top: 5%;
+}
+.areas h4,
+.areas h2 {
+    color: var(--grey02);
+}
+
+.areas h2 {
+    padding-top: 4%;
+    font-size: 2.5rem;
+}
+.areas .card {
+    border-radius: 36px;
+    width: 20rem;
+    height: 30rem;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+.areas .card h2 {
+    color: var(--white);
+    position: absolute;
+    padding: 10% 5%;
+    font-size: 6rem;
+    font-weight: 500;
+}
+.areas .card .card-img-top {
+    width: 130%;
+}
+
+.areas .card .card-body {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    border-radius: 0px 83px 36px 36px;
+    background: var(--white, #FFF);
+    padding: 10% 8%;
+}
+.areas .card .card-body h3 {
+    font-size: 2rem;
+    color: var(--black);
+}
+.areas a.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.15rem;
+    border-radius: 88px;
+    border: 1px solid var(--black);
+    background: var(--white);
+    padding: 2% 13% 2% 15%;
+    width: 10%;
+    vertical-align: middle;
+}
+.areas a.btn:hover,
+.areas .card span:hover {
+    padding: 2% 13% 2% 25%;
+    background-color: var(--orange);
+    border: 0;
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    color: var(--white);
+}
+.areas .card .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 230;
+  }
+
+/* instalaciones */
+.instalaciones .imagenes-instalaciones {
+    display: flex;
+    justify-content: center;
+}
+.instalaciones h2 {
+    color: var(--grey02);
+}
+.instalaciones h4 {
+    color: var(--grey02);
+}
+.instalaciones span {
+    color: var(--black);
+}
+.accordion-button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 2rem !important;
+    color: var(--black);
+} 
+.accordion-button sup {
+    color: var(--grey02);
+    line-height: 0;
+    top: 0;
+    padding-right: 2%;
+    font-weight: 600;
+}
+.accordion-button:not(.collapsed){
+    background-color: var(--grey01);
+    color: var(--black);
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+/* Dinacut */
+.dinacut {
+    padding: 5% 0;
+    position: relative;
+    background-image: url(../img/dinacut-banner.png);
+    background-size: cover;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+.dinacut-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(249,177,35,1) 0%, rgba(255,190,63,1) 48%, rgba(245,143,7,1) 100%);
+    z-index: -1;
+}
+.dinacut h2 {
+    color: var(--black);
+    font-size: 4rem;
+    margin: 0;
+}
+.dinacut a.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.15rem;
+    border-radius: 88px;
+    border: 1px solid var(--black);
+    background: var(--white);
+    padding: 5% 25%;
+    vertical-align: middle;
+}
+.dinacut a.btn:hover {
+    color: var(--white);
+    font-size: 1.15rem;
+    border-radius: 88px;
+    background: var(--orange);
+    border: 1px solid var(--orange);
+    padding: 5% 25%;
+    vertical-align: middle;
+}
+/* Equipo */
+.equipo h4 {
+    color: var(--grey02);
+}
+.equipo sup { 
+    color: var(--grey02);
+    line-height: 0;
+    top: 0;
+    padding-right: 2%;
+    font-weight: 600;
+}
+.equipo .card-body p {
+    margin: 0;
+}
+.equipo .card {
+    border:solid 1px var(--grey02);
+    background-color: var(--white);
+    border-radius: 15px;
+}
+.equipo .card:hover {
+    border: solid 1px var(--orange);
+}
+
+.equipo-banner .container-fluid {
+    padding: 0;
+    z-index: -1;
+    position: relative;
+    margin: 0;
+}
+/*Cobertura y Contacto */
+.datos-contacto {
+    color: var(--grey03);
+    padding-top: 5%;
+}
+.datos-contacto h3 {
+    color: var(--grey02);
+}
+.datos-contacto a {
+    color: var(--orange);
+}
+.cobertura,
+.contacto {
+    background-color: var(--black);
+    position: relative;
+    padding: 5% 0;
+}
+.cobertura hr,
+.cobertura h4,
+.cobertura h2,
+.contacto hr,
+.contacto h4,
+.contacto h2{
+    color: var(--grey02);
+}
+.cobertura h2,
+.contacto h2 {
+    font-size: 4rem;
+}
+
+.contacto label {
+    font-weight: 300;
+    color: var(--grey02);
+    font-size: 1.5rem;
+}
+.contacto input.form-control  {
+    border-radius: 0;
+    background-color: var(--black);
+    color: var(--grey01);
+    border: none;
+    border-bottom: 1px solid var(--grey02); 
+    outline: none;
+}
+.contacto input.form-control::placeholder {
+    color: var(--white); /* Color del placeholder */
+    font-family: 'Inter', sans-serif;
+}
+label.form-check-label {
+    color: var(--white);
+    font-size: 1.3rem;
+}
+.form-check-input {
+    margin-top: 0.43em;
+}
+.form-check-input:checked {
+    background-color: var(--orange);
+    border-color: var(--orange);
+}
+.form-control:focus-within{
+    color: #F59401;
+}
+form input.form-control {
+    transition: border-color 800ms;
+}
+input.form-control:focus-within {
+    border-bottom-color: var(--orange); /* Cambia el color del borde inferior en foco */
+    background-color: transparent;
+}
+textarea.form-control {
+    background-color: var(--black);
+    color: var(--grey01);
+    border: none;
+    border-bottom: 1px solid var(--grey02); 
+    outline: none;
+    border-radius: 0;
+}
+textarea.form-control:focus {
+    background-color: var(--black);
+    color: var(--white);
+}
+button.btn-form {
+    background-color: var(--black);
+    border-radius: 3rem;
+    padding: 2% 10%;
+    border: solid 1px var(--orange);
+    color: var(--white);
+}
+button.btn-form:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    transition: ease-in;
+}
+/* Trabajan */
+.clientes {
+    background-color: var(--white);
+}
+.clientes .carousel img{
+    width: 60%;
+}
+.clientes .carousel .carousel-item {
+    transition: transform .6s ease-in-out;
+}
+.clientes a.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1rem;
+    border-radius: 88px;
+    border: 1px solid var(--black);
+    background: var(--white);
+    width: 100%;
+    margin: 1%;
+}
+.clientes a.btn:hover{
+    color: var(--white);
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    transition: 0.3s ease-in;
+    text-decoration: none;
+ }
+.clientes .enfasis a {
+    position: relative;
+    text-decoration: none;
+    color: var(--black);
+}
+.clientes .enfasis a::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    height: 1px;
+    width: 0;
+    background-color: var(--black);
+    border-radius: 1px;
+    transition: width 0.3s ease-in;
+}
+.clientes .enfasis a:hover::before {
+    width: 100%;
+}
+.clientes p.enfasis {
+    color: var(--grey02);
+}
+/* ------------Pages servicios-------------- */ 
+.header-servicios {
+    background-image: url(../img/background-orange.png);
+    height: 70vh;
+    background-size: auto;
+    background-position: left;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: -1;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 230;
+  font-size: 2rem;
+  color: var(--black);
+  vertical-align: middle;
+}
+.circle {
+    background: var(--white);
+    border-radius: 50%;
+    border: 0.5px solid var(--black);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+}
+.circle:hover {
+    background: var(--orange);
+    color: var(--white);
+    border-radius: 88px;
+    border: 0;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-out 300ms;
+}
+.header-servicios .whatsapp {
+    position: fixed;
+    z-index: 3;
+    right: 5%;
+    bottom: 10%;
+}
+.header-servicios .circle-whatsapp {
+    background-color: var(--black);
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+    color: var(--white);
+    border-radius: 88px;
+    border: 0;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-out 300ms;
+}
+.header-servicios .whatsapp a {
+    text-decoration: none;
+}
+.header-servicios .whatsapp .circle:hover {
+    background-color: var(--orange);
+    transition: 300ms ease-in;
+}
+.title-servicios {
+    padding-top: 15%;
+}
+.title-servicios a {
+    text-decoration: none;
+}
+.servicios-descripcion {
+    background-image: url(../img/background-gradient-right.png);
+    background-size: 100vw;
+    background-size: auto;
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    top: 0;
+}
+.servicios-descripcion h2 {
+    color: var(--grey02);
+    font-weight: 400;
+    padding: 15% 0;
+}
+.servicios-descripcion span {
+    color: var(--black);
+}
+.servicios-descripcion h4 {
+    color: var(--grey02);
+}
+.servicios-descripcion hr {
+    margin: 0;
+    color: inherit;
+    border: 1px solid var(--grey02);
+    border-top: var(--bs-border-width) solid;
+    opacity: 0.25;
+    width: 100%;
+}
+.servicios-descripcion .card {
+    border-radius: 20px;
+    border: 1px solid var(--grey02);
+    background: var(--white);
+    height: 450px;
+}
+.servicios-descripcion .card:hover {
+    border: 1px solid var(--orange);
+    background-color: var(--grey04);
+    transition: 300ms ease-in;
+}
+.servicios-descripcion .card h2.card-title {
+    font-size: 5rem;
+    color: var(--black);
+    padding: 2% 0;
+    margin: 0;
+}
+.servicios-descripcion .card h2.card-title:hover {
+    color: var(--orange);
+}
+.servicios-descripcion .card h3.card-subtitle {
+    font-size: 2rem;
+    color: var(--black);
+}
+.servicios-descripcion .card .card-text {
+    color: var(--black);
+}
+
+@media (max-width: 1366px) {
+    .dinacut h2 {
+        font-size: 3rem;
+    }
+}
+@media (max-width: 992px) {
+    .procesos .card span.circle {
+        width: 80px;
+        height: 80px;
+    }
+    .procesos .card-body h3.card-title {
+        font-size: 1.3rem !important;
+    }
+    .areas a.btn {
+        padding: 2% 18% 2% 15%;
+    }
+    .dinacut img {
+        width: 90%;
+    }
+    .cobertura h2,
+    .contacto h2 {
+    font-size: 2rem;
+}
+}
+@media (max-width: 820px) {
+    .procesos .card {
+        height: 252px;
+    }
+    .procesos .card span.circle {
+        width: 60px;
+        height: 60px;
+    }
+    .procesos .card span {
+        font-size: 2rem;
+    }
+    .areas .card .card-img-top {
+        width: 150%;
+    }
+    .areas .card .card-body h3 {
+        font-size: 1.5rem;
+    }
+    .areas a.btn {
+        padding: 2% 23% 2% 15%;
+    }
+    .areas .card h2 {
+        font-size: 5rem;
+    }
+    .areas .card {
+        border-radius: 25px;
+    }
+    .areas .card .card-body {
+        position: absolute;
+        border-radius: 0px 43px 36px 36px;
+    }
+    .dinacut h2 {
+        font-size: 2rem;
+    }
+    .dinacut a.btn {
+        padding: 2% 10%;
+    }
+    /*Servicios */
+    .servicios-descripcion .card {
+        height: auto;
+    }
+    .servicios-descripcion .card h2.card-title {
+        font-size: 3rem;
+    }
+    .servicios-descripcion .card h3.card-subtitle {
+        font-size: 1.5rem;
+    }
+    .servicios-descripcion .card .card-text {
+        color: var(--black);
+        font-size: 0.95rem;
+    }
+    .servicios-descripcion .card .card-body .hr-servicios {
+        padding: 5% 0;
+    }
+}
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+    .areas .card {
+        height: 23rem;
+    }
+    .areas .card h2 {
+        font-size: 4rem;
+    }
+    .datos-contacto h3 {
+        padding-top: 5%;
+     }
+}
+@media (max-width: 576px) {
+    .procesos .card {
+        height: 213px;
+    }
+    .procesos .card-body h3.card-title {
+        font-size: 1rem !important;
+    }
+    .areas .card {
+        height: 20rem;
+        border-radius: 19px;
+    }
+    .areas .card .card-body h3 {
+        font-size: 1rem;
+    }
+    .areas a.btn {
+        padding: 1% 30% 1% 15%;
+    }
+    .dinacut img {
+        width: 80%;
+    }
+    .dinacut h2 {
+        font-size: 1.4rem;
+    }
+    .dinacut a.btn {
+        padding: 2% 8%;
+        font-size: 1rem;
+    }
+    .card-body {
+        height: auto;
+    }
+    .accordion-button {
+        font-size: 1.3rem !important;
+    }
+    .datos-contacto h3 {
+        padding-top: 5%;
+     }
+    /*Serivicios */
+    .servicios-descripcion h2 {
+        padding: 0 0 10% 0;
+    }
+    .servicios-descripcion .card {
+        height: 400px;
+    }
+}
+@media (max-width: 425px) {
+    .header {
+        height: 100vh;
+        background-image: url(../img/banner-mobile.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: local !important;
+    }
+    .header h1 {
+        font-size: 2rem;
+    }
+    .header img {
+        width: 100%;
+    }
+    .procesos .card {
+        height: 195px;
+        width: 18rem;
+    }
+    .areas .card .card-body h3 {
+        font-size: 1.5rem;
+    }
+    .areas .card .card-body {
+        position: absolute;
+        border-radius: 0px 44px 20px 20px;
+    }
+    .dinacut img {
+        width: 70%;
+    }
+    .dinacut h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        padding-top: 5%;
+    }
+    .clientes a.btn {
+        font-size: 1rem;
+    }
+    .clientes .carousel-item img{
+        width: 100%;
+    }
+    .offcanvas-body .navbar-nav a {
+        font-size: 1rem;
+    }
+    .datos-contacto h3 {
+       padding-top: 5%;
+    }
+}
+@media (max-width: 375px) {
+    .proceso .card-body {
+        height: auto;
+    }
+    .clientes img {
+        width: 100%;
+        padding-bottom: 5%;
+    }
+
+    }
+@media (max-width: 320px) {
+    .header {
+        height: 100vh;
+        background-image: url(../img/banner-mobile.png);
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .equipo .card {
+        width: 90%;
+    }
+   .equipo .card-body p {
+        font-size: 0.90rem;
+    }
+    .clientes img {
+        width: 100%;
+        padding-bottom: 10%;
+    }
+    .clientes a.btn {
+        font-size: 0.7rem;
+    }
+    .clientes .carousel img{
+        width: 100%;
+    }
+    /*Servicios*/
+    .servicios-descripcion .card .card-text {
+       padding: 0;
+    }
+}
